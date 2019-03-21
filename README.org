@@ -1,50 +1,46 @@
-# Formula 1
-# 2018 Season
-
-Data set of the 2018 season.
-
-## Fantasy F1 Rules
-* Qualifying
-** Did not progress to Q2 : 1 pt
-** Progressed to Q2 but did not progress to Q3 : 2 pts
-** Progressed to Q : 3 pts
-** Qualified ahead of team mate : 2 pts (driver only)
-** Did not qualify : -5 pts (driver only)
-* Qualifying Position Bonuses
-** Pole Position : 10 pts
-** 2nd  Place    :  9 pts
-** 3rd  Place    :  8 pts
-** 4th  Place    :  7 pts
-** 5th  Place    :  6 pts
-** 6th  Place    :  5 pts
-** 7th  Place    :  4 pts
-** 8th  Place    :  3 pts
-** 9th  Place    :  2 pts
-** 10th Place    :  1 pts
-* Race
-** General : 1 pt
-** Fastest lap : 5 pts (driver only)
-** Finished ahead of team mate : 3 pts (driver only)
-** Finished race, position gained : +2 pts per place gained (+10 max)
-** Started race within top 10, finished race but lost position : -2 pts per place lost (-10 max)
-** Started race outside top 10, finished race but lost position : -1 pt per place (-5 max)
-** Not classified : -15 pts (driver only)
-** Disqualification : -20 pts (driver only)
-* Finishing Position Bonuses
-** 1st  Place : 25 pts
-** 2nd  Place : 18 pts
-** 3rd  Place : 15 pts
-** 4th  Place : 12 pts
-** 5th  Place : 10 pts
-** 6th  Place :  8 pts
-** 7th  Place :  6 pts
-** 8th  Place :  4 pts
-** 9th  Place :  2 pts
-** 10th Place :  1 pts
-* Streaks
-** Driver qualifies top 10, 5 races in a row : 5  pts
-** Driver finishes  top 10, 5 races in a row : 10 pts
-** Both drivers qualify top 10, 3 races in a row : 5  pts
-** Both drivers finish  top 10, 3 races in a row : 10 pts
-* Positions
-** Positions gained from starting position on grid equals points gained
+* Formula 1 2018 Season Data Set
+* Fantasy F1 Rules
+** Qualifying
+*** Did not progress to Q2 : 1 pt
+*** Progressed to Q2 but did not progress to Q3 : 2 pts
+*** Progressed to Q : 3 pts
+*** Qualified ahead of team mate : 2 pts (driver only)
+*** Did not qualify : -5 pts (driver only)
+** Qualifying Position Bonuses
+*** Pole Position : 10 pts
+*** 2nd  Place    :  9 pts
+*** 3rd  Place    :  8 pts
+*** 4th  Place    :  7 pts
+*** 5th  Place    :  6 pts
+*** 6th  Place    :  5 pts
+*** 7th  Place    :  4 pts
+*** 8th  Place    :  3 pts
+*** 9th  Place    :  2 pts
+*** 10th Place    :  1 pts
+** Race
+*** General : 1 pt
+*** Fastest lap : 5 pts (driver only)
+*** Finished ahead of team mate : 3 pts (driver only)
+*** Finished race, position gained : +2 pts per place gained (+10 max)
+*** Started race within top 10, finished race but lost position : -2 pts per place lost (-10 max)
+*** Started race outside top 10, finished race but lost position : -1 pt per place (-5 max)
+*** Not classified : -15 pts (driver only)
+*** Disqualification : -20 pts (driver only)
+** Finishing Position Bonuses
+*** 1st  Place : 25 pts
+*** 2nd  Place : 18 pts
+*** 3rd  Place : 15 pts
+*** 4th  Place : 12 pts
+*** 5th  Place : 10 pts
+*** 6th  Place :  8 pts
+*** 7th  Place :  6 pts
+*** 8th  Place :  4 pts
+*** 9th  Place :  2 pts
+*** 10th Place :  1 pts
+** Streaks
+*** Driver qualifies top 10, 5 races in a row : 5  pts
+*** Driver finishes  top 10, 5 races in a row : 10 pts
+*** Both drivers qualify top 10, 3 races in a row : 5  pts
+*** Both drivers finish  top 10, 3 races in a row : 10 pts
+** Positions
+*** Positions gained from starting position on grid equals points gained
