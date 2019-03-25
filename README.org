@@ -1,5 +1,6 @@
 * Formula 1 2018 Season Data Set
 * Fantasy F1 Rules
+All on a $100 million budget
 ** Qualifying
 *** Did not progress to Q2 : 1 pt
 *** Progressed to Q2 but did not progress to Q3 : 2 pts
@@ -44,3 +45,8 @@
 *** Both drivers finish  top 10, 3 races in a row : 10 pts
 ** Positions
 *** Positions gained from starting position on grid equals points gained
+* TODO
+** averages
+simple average, t-tests, slicing data two or three ways
+** prediction
+add additional variables like weather etc. etc.
