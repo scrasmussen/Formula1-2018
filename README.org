@@ -20,6 +20,7 @@ All on a $100 million budget
 ** DONE Race
 *** Finished Race : 1 pt
 *** Finished race, position gained : +2 pts per place gained (+10 max)
+*** Fastest lap : 5 pts (driver only)
 *** Started race within top 10, finished race but lost position : -2 pts per place lost (-10 max)
 *** Started race outside top 10, finished race but lost position : -1 pt per place (-5 max)
 *** Not classified : -15 pts (driver only)
@@ -35,14 +36,13 @@ All on a $100 million budget
 *** 8th  Place :  4 pts
 *** 9th  Place :  2 pts
 *** 10th Place :  1 pts
-** Streaks
+** TODO Streaks
 *** Driver qualifies top 10, 5 races in a row : 5  pts
 *** Driver finishes  top 10, 5 races in a row : 10 pts
 *** Both drivers qualify top 10, 3 races in a row : 5  pts
 *** Both drivers finish  top 10, 3 races in a row : 10 pts
 ** TODO
 *** Qualified ahead of teammate : 2 pts (driver only)
-*** Fastest lap : 5 pts (driver only)
 *** Finished ahead of teammate : 3 pts (driver only)
 * TODO
 ** averages
