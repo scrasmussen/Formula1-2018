@@ -29,6 +29,8 @@ print("a: list sorted by points/cost")
 
 drivers = p.query("isDriver == True")
 teams   = p.query("isDriver == False")
+print(teams)
+print(drivers)
 
 iterDrivers = list(it.combinations(drivers.Name, 5))
 best_points = 0
@@ -44,14 +46,18 @@ for driverList in iterDrivers:
     team_points = teams.loc[teams['Name']==team].Points.item()
     driver_points = drivers.loc[drivers['Name'].isin(driverList)].Points.sum()
     total_points = team_points + driver_points
+
     if (total_points == best_points):
-      print("REPEAT? @ ",total_points, " and ", total_cost)
-    if (total_points > best_points):
+      print("REPEAT! ",total_points, " and ", total_cost)
+    if (total_points >= best_points):
       best_points  = total_points
       best_cost    = total_cost
       best_team    = team
       best_drivers = driverList
-      print(total_cost, total_points)
+      best_list    = team + ", " + ", ".join(driverList)
+      b = ["{0:0.2f}".format(i) for i in [total_cost, total_points]]
+      print("\ncost: "+str(b[0]) + " points: " + str(b[1]))
+      print(best_list)
 
 
 print("---Finished Analysis---")
