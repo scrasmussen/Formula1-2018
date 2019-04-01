@@ -1,4 +1,5 @@
 * Formula 1 2018 Season Data Set
+Dataset from
 * Fantasy F1 Rules
 All on a $100 million budget
 ** DONE Qualifying
@@ -49,3 +50,8 @@ All on a $100 million budget
 simple average, t-tests, slicing data two or three ways
 ** prediction
 add additional variables like weather etc. etc.
+Ferrari 29, Mercedes 32, so have 10.2 to play with
+* HOWTO
+`run ./script.py`
+`whos`
+`list(dataframeforheaders)`

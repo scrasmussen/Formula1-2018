@@ -1,30 +1,60 @@
-1,2019,"Mercedes",70
-1,2019,"Bottas",48
-1,2019,"Ferrari",42
-1,2019,"Red Bull",40
-1,2019,"Verstappen",33
-1,2019,"Hamilton",32
-1,2019,"Vettel",27
-1,2019,"Haas",26
-1,2019,"Hulkenberg",22
-1,2019,"Magnussen",21
-1,2019,"Leclerc",20
-1,2019,"Renault",19
-1,2019,"Stroll",17
-1,2019,"Kvyat",17
-1,2019,"Raikkonen",17
-1,2019,"Toro Rosso",16
-1,2019,"Williams",16
-1,2019,"Alfa Romeo",14
-1,2019,"Russell",13
-1,2019,"Racing Point",13
-1,2019,"Gasly",12
-1,2019,"Kubica",8
-1,2019,"Norris",4
-1,2019,"Albon",4
-1,2019,"Giovinazzi",2
-1,2019,"Perez",1
-1,2019,"McLaren",0
-1,2019,"Grosjean",-5
-1,2019,"Ricciardo",-13
-1,2019,"Sainz",-14
+1,2019,"Mercedes",70,0
+1,2019,"Bottas",48,1
+1,2019,"Ferrari",42,0
+1,2019,"Red Bull",40,0
+1,2019,"Verstappen",33,1
+1,2019,"Hamilton",32,1
+1,2019,"Vettel",27,1
+1,2019,"Haas",26,0
+1,2019,"Hulkenberg",22,1
+1,2019,"Magnussen",21,1
+1,2019,"Leclerc",20,1
+1,2019,"Renault",19,0
+1,2019,"Stroll",17,1
+1,2019,"Kvyat",17,1
+1,2019,"Raikkonen",17,1
+1,2019,"Toro Rosso",16,0
+1,2019,"Williams",16,0
+1,2019,"Alfa Romeo",14,0
+1,2019,"Russell",13,1
+1,2019,"Racing Point",13,0
+1,2019,"Gasly",12,1
+1,2019,"Kubica",8,1
+1,2019,"Norris",4,1
+1,2019,"Albon",4,1
+1,2019,"Giovinazzi",2,1
+1,2019,"Perez",1,1
+1,2019,"McLaren",0,0
+1,2019,"Grosjean",-5,1
+1,2019,"Ricciardo",-13,1
+1,2019,"Sainz",-14,1
+2,2019,"Hamilton",51,1
+2,2019,"Bottas",33,1
+2,2019,"Leclerc",30,1
+2,2019,"Verstappen",29,1
+2,2019,"Norris",22,1
+2,2019,"Raikkonen",19,1
+2,2019,"Vettel",17,1
+2,2019,"Gasly",17,1
+2,2019,"Perez",17,1
+2,2019,"Albon",16,1
+2,2019,"Russell",15,1
+2,2019,"Giovinazzi",12,1
+2,2019,"Stroll",10,1
+2,2019,"Kubica",10,1
+2,2019,"Kvyat",9,1
+2,2019,"Hulkenberg",5,1
+2,2019,"Magnussen",4,1
+2,2019,"Sainz",0,1
+2,2019,"Ricciardo",-5,1
+2,2019,"Grosjean",-9,1
+2,2019,"Mercedes",74,0
+2,2019,"Ferrari",42,0
+2,2019,"Red Bull",41,0
+2,2019,"Alfa Romeo",26,0
+2,2019,"Racing Point",22,0
+2,2019,"Williams",20,0
+2,2019,"Toro Rosso",20,0
+2,2019,"McLaren",17,0
+2,2019,"Haas",5,0
+2,2019,"Renault",-5,0
