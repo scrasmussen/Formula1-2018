@@ -46,6 +46,8 @@ All on a $100 million budget
 *** Qualified ahead of teammate : 2 pts (driver only)
 *** Finished ahead of teammate : 3 pts (driver only)
 * TODO
+** stability
+do a [[https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html][simple linear regression]]
 ** averages
 simple average, t-tests, slicing data two or three ways
 ** prediction

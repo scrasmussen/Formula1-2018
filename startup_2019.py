@@ -10,15 +10,17 @@ def pprint(current_group, total_cost, total_points, turbo):
   print(current_group)
 
 # import race data
-fantasy2019 = ["Week","Name","Points","isDriver"]
+fantasy2019 = ["Week","Year","Name","Points","isDriver"]
 f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019)
-mean = f.groupby(['Week','Name']).mean()
+f.drop(['Year','Week'], axis=1, inplace=True)
+# lr = f.drop(['Week','isDriver'], axis=1)
+mean = f.groupby(['Name']).mean()
 ave_points = mean.sort_values('Points',ascending=False)
 
 # import cost data
 cost_names = ["Week","Name","Cost"]
-c1 = pd.read_csv('data/fantasy2019_cost.csv', names=cost_names)
-current_week = c1[c1.Week == 3]
+cost_data = pd.read_csv('data/fantasy2019_cost.csv', names=cost_names)
+current_week = cost_data[cost_data.Week == 3]
 cost  = current_week[["Name","Cost"]]
 cost = pd.merge(cost,ave_points,on='Name',how='outer')
 p = cost.sort_values('Points',ascending=False)
@@ -37,6 +39,7 @@ teams   = p.query("isDriver == False")
 print(teams)
 print(drivers)
 # sys.exit()
+
 iterDrivers = list(it.combinations(drivers.Name, 5))
 best_points = 0
 best_team   = ''
@@ -76,13 +79,15 @@ for driverList in iterDrivers:
     elif (total_points >= 200): # best_points - 2):
       current_group = team[name_i] + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo.item())
+
+# zip list with only Mercedes taking 46.7 seconds, 48.58, 45.77
 end = time.time()
-# zip list with only Mercedes taking 46.7 seconds, 48.58
+pp="{0:0.02f}"
 
 print("\n---Finished Analysis---")
-print("Took ",end-start," seconds")
+print("Runtime: " + pp.format(end-start) + " seconds")
 print("Best team: " + best_team)
 print("Best drivers: " + ", ".join(best_drivers))
-print("Best points: "  + "{0:0.02f}".format(best_points))
-print("Total cost: "   + "{0:0.02f}".format(best_cost))
+print("Best points: "  + pp.format(best_points))
+print("Total cost: "   + pp.format(best_cost))
 print("\nFIN")
