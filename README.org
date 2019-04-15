@@ -46,6 +46,11 @@ All on a $100 million budget
 *** Qualified ahead of teammate : 2 pts (driver only)
 *** Finished ahead of teammate : 3 pts (driver only)
 * TODO
+** lap position change
+add data
+https://www.racefans.net/2019/03/17/2019-australian-grand-prix-interactive-data-lap-charts-times-and-tyres/
+https://www.racefans.net/2019/03/31/2019-bahrain-grand-prix-interactive-data-lap-charts-times-and-tyres/
+https://www.racefans.net/2019/04/14/2019-chinese-grand-prix-interactive-data-lap-charts-times-and-tyres/
 ** stability
 do a [[https://docs.scipy.org/doc/numpy/reference/generated/numpy.polyfit.html][simple linear regression]]
 ** averages
