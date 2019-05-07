@@ -43,6 +43,9 @@ cost  = current_week[["Name","Cost"]]
 # get averages
 driver_ave       = driver_data.groupby(['Name']).mean()
 constructor_ave  = constructor_data.groupby(['Name']).mean()
+driver_sum       = driver_data.groupby(['Name']).sum()
+constructor_sum  = constructor_data.groupby(['Name']).sum()
+
 
 # merge points data with costs
 drivers = pd.merge(cost,driver_ave,on='Name',how='right',)

@@ -1,1 +1,1 @@
-Week, Name, Points, Team/Driver
+Week, Name, Points, Team/Driver, Starting Position, Change in Position
