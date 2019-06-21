@@ -4,7 +4,6 @@ import itertools as it
 import sys
 import time
 
-starting_week = 4
 
 isDriver = 1
 isConstructor = 0
@@ -26,11 +25,14 @@ fantasy2019 = ['Week','Year','Name','Points','isDriver','StartPosition',
 f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019,
                  dtype={'isDriver':bool})
 # limit weeks
-f = f[f.Week >= starting_week]
+starting_week = 1
+ending_week   = max(f.Week)
+f = f[(ending_week >= f.Week) & (f.Week >= starting_week)]
 f.drop(['Year','Week'], axis=1, inplace=True)
 driver_names_subset = ['Name', 'Points', 'StartPosition','PositionChange']
 driver_data      = f.loc[f.isDriver == isDriver, driver_names_subset]
 constructor_data = f.loc[f.isDriver == isConstructor, ['Name', 'Points']]
+print("Range: week " + str(starting_week) + " to week " +  str(ending_week))
 
 # fix types, need to do this here because None's aren't numbers
 driver_data.StartPosition = pd.to_numeric(driver_data.StartPosition)
