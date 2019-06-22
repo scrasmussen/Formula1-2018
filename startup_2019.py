@@ -4,6 +4,8 @@ import itertools as it
 import sys
 import time
 
+budget = 103.9 # current budget
+week=7 # current week
 
 isDriver = 1
 isConstructor = 0
@@ -41,7 +43,7 @@ driver_data.PositionChange = pd.to_numeric(driver_data.PositionChange)
 # import cost data
 cost_names = ["Week","Name","Cost"]
 cost_data = pd.read_csv('data/fantasy2019_cost.csv', names=cost_names)
-current_week = cost_data[cost_data.Week == 5]
+current_week = cost_data[cost_data.Week == week]
 cost  = current_week[["Name","Cost"]]
 
 # get averages
@@ -88,7 +90,6 @@ cost_i=2
 # only look at Mercedes cause they are destroying, speeds up algorithm
 team_mercedes = list((t for t in team_list if t[name_i] == 'Mercedes'))
 
-budget = 102
 # begin iteration
 start = time.time()
 for driverList in iterDrivers:
