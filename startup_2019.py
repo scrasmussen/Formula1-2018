@@ -4,8 +4,9 @@ import itertools as it
 import sys
 import time
 
-budget = 103.9 # current budget
-week=7 # current week
+# 103.9
+budget = 105 # current budget
+week=8 # current week
 
 isDriver = 1
 isConstructor = 0
