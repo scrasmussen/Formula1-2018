@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-# 103.9, 105, 105.8, 106.2
-budget = 107.4  # current budget
-week= 11 # current week
+# 103.9, 105, 105.8, 106.2, 107.4
+budget = 109.9  # current budget
+week= 13 # current week
 
 isDriver = 1
 isConstructor = 0
@@ -126,6 +126,7 @@ print("\n---Finished Analysis---")
 print("Runtime: " + pp.format(end-start) + " seconds")
 print("Best team: " + best_team)
 print("Best drivers: " + ", ".join(best_drivers))
-print("Best points: "  + pp.format(best_points))
+print("Best turbo: "   + ", ".join(best_turbo))
+print("Best points: "  + best_points)
 print("Total cost: "   + pp.format(best_cost))
 print("\nFIN")
