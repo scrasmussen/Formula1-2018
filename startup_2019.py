@@ -4,9 +4,11 @@ import itertools as it
 import sys
 import time
 
-# 103.9, 105, 105.8, 106.2, 107.4, 109.9
-budget = 110.9  # current budget
-week= 13 # current week
+# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9
+budget = 112  # current budget
+week= 14 # current week
+starting_week = 1
+
 
 isDriver = 1
 isConstructor = 0
@@ -28,7 +30,6 @@ fantasy2019 = ['Week','Year','Name','Points','isDriver','StartPosition',
 f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019,
                  dtype={'isDriver':bool})
 # limit weeks
-starting_week = 1
 ending_week   = max(f.Week)
 f = f[(ending_week >= f.Week) & (f.Week >= starting_week)]
 f.drop(['Year','Week'], axis=1, inplace=True)
@@ -95,6 +96,10 @@ team_mercedes = list((t for t in team_list if t[name_i] == 'Mercedes'))
 start = time.time()
 for driverList in iterDrivers:
   for team in team_mercedes:
+    if 'Albon' not in driverList:
+      break
+    if 'Gasly' in driverList:
+      break
     team_cost   = team[cost_i]
     driver_cost   = drivers.loc[drivers['Name'].isin(driverList)].Cost.sum()
     total_cost   = team_cost + driver_cost
@@ -126,7 +131,7 @@ print("\n---Finished Analysis---")
 print("Runtime: " + pp.format(end-start) + " seconds")
 print("Best team: " + best_team)
 print("Best drivers: " + ", ".join(best_drivers))
-print("Best turbo: "   + ", ".join(best_turbo))
-print("Best points: "  + best_points)
+print("Best turbo: "   + best_turbo)
+print("Best points: "  + pp.format(best_points))
 print("Total cost: "   + pp.format(best_cost))
 print("\nFIN")
