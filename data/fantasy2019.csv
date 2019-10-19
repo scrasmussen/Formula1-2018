@@ -230,7 +230,7 @@
 8,2019,"Grosjean",-14,1,16,-5
 8,2019,"Mercedes",70,0,None,None
 8,2019,"Ferrari",49,0,None,None
-8,2019,"Red Bull",28,0,None,None
+8,2019,"Red Bull",38,0,None,None
 8,2019,"McLaren",21,0,None,None
 8,2019,"Renault",18,0,None,None
 8,2019,"Racing Point",17,0,None,None
@@ -448,3 +448,63 @@
 15,2019,"Haas",11,0,None,None
 15,2019,"Williams",9,0,None,None
 15,2019,"Alfa Romeo",6,0,None,None
+16,2019,"Hamilton",50,1,2,1
+16,2019,"Bottas",42,1,4,2
+16,2019,"Leclerc",45,1,1,-2
+16,2019,"Verstappen",38,1,9,5
+16,2019,"Albon",22,1,20,15
+16,2019,"Sainz",20,1,5,-1
+16,2019,"Perez",22,1,11,4
+16,2019,"Norris",9,1,7,-1
+16,2019,"Magnussen",16,1,13,4
+16,2019,"Hulkenberg",6,1,6,-4
+16,2019,"Stroll",9,1,14,3
+16,2019,"Kvyat",9,1,19,7
+16,2019,"Raikkonen",9,1,15,2
+16,2019,"Gasly",9,1,16,2
+16,2019,"Giovinazzi",2,1,12,-3
+16,2019,"Kubica",-14,1,18,-3
+16,2019,"Russell",-12,1,17,-4
+16,2019,"Vettel",1,1,3,-18
+16,2019,"Ricciardo",-10,1,10,-11
+16,2019,"Grosjean",-8,1,8,-13
+16,2019,"Mercedes",72,0,None,None
+16,2019,"Red Bull",55,0,None,None
+16,2019,"Ferrari",36,0,None,None
+16,2019,"Racing Point",26,0,None,None
+16,2019,"McLaren",24,0,None,None
+16,2019,"Toro Rosso",18,0,None,None
+16,2019,"Haas",18,0,None,None
+16,2019,"Alfa Romeo",6,0,None,None
+16,2019,"Renault",5,0,None,None
+16,2019,"Williams",2,0,None,None
+17,2019,"Bottas",46,1,3,2
+17,2019,"Vettel",1,1,1,-1
+17,2019,"Hamilton",33,1,4,1
+17,2019,"Albon",28,1,6,2
+17,2019,"Sainz",27,1,7,2
+17,2019,"Ricciardo",23,1,16,10
+17,2019,"Leclerc",9,1,2,-5
+17,2019,"Gasly",17,1,9,1
+17,2019,"Perez",,1,17,8
+17,2019,"Hulkenberg",26,1,15,5
+17,2019,"Stroll",7,1,12,1
+17,2019,"Kvyat",7,1,14,2
+17,2019,"Norris",-3,1,8,-5
+17,2019,"Raikkonen",5,1,13,-1
+17,2019,"Grosjean",0,1,10,-5
+17,2019,"Giovinazzi",0,1,11,-5
+17,2019,"Magnussen",0,1,19,2
+17,2019,"Russell",7,1,18,0
+17,2019,"Kubica",-2,1,20,1
+17,2019,"Verstappen",-4,1,5,-16
+17,2019,"Mercedes",79,0,None,None
+17,2019,"Ferrari",44,0,None,None
+17,2019,"Red Bull",34,0,None,None
+17,2019,"Renault",34,0,None,None
+17,2019,"McLaren",24,0,None,None
+17,2019,"Racing Point",19,0,None,None
+17,2019,"Toro Rosso",19,0,None,None
+17,2019,"Williams",3,0,None,None
+17,2019,"Alfa Romeo",0,0,None,None
+17,2019,"Haas",0,0,None,None

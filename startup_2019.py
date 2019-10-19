@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9
-budget = 112  # current budget
-week= 14 # current week
+# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9, 111, 110.8
+budget = 111.3  # current budget
+week= 17 # current week
 starting_week = 1
 
 
@@ -90,16 +90,20 @@ points_i=1
 cost_i=2
 
 # only look at Mercedes cause they are destroying, speeds up algorithm
-team_mercedes = list((t for t in team_list if t[name_i] == 'Mercedes'))
+team_mercedes = list((t for t in team_list
+                      if(t[name_i] == 'Mercedes' or t[name_i] == 'Ferrari')))
+                      # if(t[name_i] == 'Mercedes')))
+
+print(team_mercedes)
 
 # begin iteration
 start = time.time()
 for driverList in iterDrivers:
   for team in team_mercedes:
-    if 'Albon' not in driverList:
-      break
-    if 'Gasly' in driverList:
-      break
+    if 'Albon' not in driverList:  # Albon is undervalued in points because he
+      break                        #   now drives for Red Bull
+    if 'Gasly' in driverList:      # Gasly is overvalued in points because he
+      break                        #   now drives for Toro Roso
     team_cost   = team[cost_i]
     driver_cost   = drivers.loc[drivers['Name'].isin(driverList)].Cost.sum()
     total_cost   = team_cost + driver_cost
