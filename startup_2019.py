@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9, 111, 110.8
-budget = 111.3  # current budget
-week= 17 # current week
+# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9, 111, 110.8, 111.3
+budget = 111.7  # current budget
+week=18 # current week
 starting_week = 1
 
 
