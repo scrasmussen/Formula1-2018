@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9, 111, 110.8, 111.3, 111.7
-budget = 110.5  # current budget
-week=19 # current week
+# 103.9, 105, 105.8, 106.2, 107.4, 109.9, 110.9, 111, 110.8, 111.3, 111.7, 110.5
+budget = 111.2  # current budget
+week=20 # current week
 starting_week = 1
 
 
@@ -92,7 +92,7 @@ cost_i=2
 # only look at Mercedes cause they are destroying, speeds up algorithm
 team_mercedes = list((t for t in team_list
                       if(t[name_i] == 'Mercedes' or t[name_i] == 'Ferrari')))
-                      # if(t[name_i] == 'Mercedes')))
+                      # if(t[name_i] == 'Ferrari')))
 
 print(team_mercedes)
 

@@ -1,3 +1,7 @@
+1,2019,"Bottas",10,1,0,0
+1,2019,"Hamilton",30,1,0,0
+1,2019,"Ferrari",-10,0,None,None
+
 1,2019,"Bottas",48,1,2,1
 1,2019,"Verstappen",33,1,4,1
 1,2019,"Hamilton",32,1,1,-1
@@ -568,3 +572,35 @@
 19,2019,"Williams",5,0,None,None
 19,2019,"Haas",1,0,None,None
 19,2019,"Toro Rosso",0,0,None,None
+
+20,2019,"Verstappen",44,1,1,0
+20,2019,"Gasly",39,1,6,4
+20,2019,"Sainz",24,1,20,17
+20,2019,"Raikkonen",31,1,8,4
+20,2019,"Giovinazzi",23,1,12,7
+20,2019,"Ricciardo",26,1,11,5
+20,2019,"Hamilton",30,1,3,-4
+20,2019,"Norris",13,1,10,2
+20,2019,"Perez",50,1,15,6
+20,2019,"Kvyat",13,1,16,6
+20,2019,"Magnussen",4,1,9,-2
+20,2019,"Russell",17,1,18,6
+20,2019,"Grosjean",-1,1,7,-5
+20,2019,"Albon",-1,1,4,-9
+20,2019,"Hulkenberg",1,1,13,-2
+20,2019,"Kubica",8,1,19,3
+20,2019,"Vettel",8,1,2,-15
+20,2019,"Leclerc",7,1,14,-4
+20,2019,"Stroll",0,1,17,-2
+20,2019,"Bottas",4,1,4,-17
+
+20,2019,"Alfa Romeo",49,0,None,None
+20,2019,"Toro Rosso",47,0,None,None
+20,2019,"Red Bull",38,0,None,None
+20,2019,"McLaren",37,0,None,None
+20,2019,"Ferrari",35,0,None,None
+20,2019,"Renault",22,0,None,None
+20,2019,"Mercedes",19,0,None,None
+20,2019,"Racing Point",15,0,None,None
+20,2019,"Williams",20,0,None,None
+20,2019,"Haas",-2,0,None,None
