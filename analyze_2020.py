@@ -26,7 +26,7 @@ def pprint(current_group, total_cost, total_points, turbo):
 # import race data
 fantasy2019 = ['Week','Year','Name','Points','isDriver','StartPosition',
                'PositionChange']
-f = pd.read_csv('data/fantasy2020.csv', names=fantasy2019,
+f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019,
                  dtype={'isDriver':bool})
 
 
@@ -74,6 +74,8 @@ teams   = teams.join(teams_div,how="outer")
 # sort data
 drivers = drivers.sort_values('Points/Cost',ascending=False)
 teams   = teams.sort_values('Points/Cost',ascending=False)
+# drivers = drivers.sort_values('Points',ascending=False)
+# teams   = teams.sort_values('Points',ascending=True)
 
 print(teams)
 
@@ -102,17 +104,19 @@ team_mercedes = list((t for t in team_list
                       # if(t[name_i] == 'Mercedes' or t[name_i] == 'Ferrari')))
                       if(t[name_i] == 'Mercedes')))
 
-print(team_mercedes)
+# print(team_list)
+# sys.exit()
 
 # begin iteration
 start = time.time()
 for driverList in iterDrivers:
   for team in team_mercedes:
+  # for team in team_list:
     # if 'Albon' not in driverList:  # Albon is undervalued in points because he
     #   break                        #   now drives for Red Bull
     # Gasly is overvalued in points because he
-    if 'Gasly' in driverList:
-      break
+    # if 'Gasly' in driverList:
+    #   break
     # print(driverList)
     team_cost   = team[cost_i]
     driver_cost   = drivers.loc[drivers['Name'].isin(driverList)].Cost.sum()
@@ -124,7 +128,7 @@ for driverList in iterDrivers:
     # print(total_cost, ":", driverList)
     # break
     team_points = team[points_i]
-    qndriver_points = drivers.loc[drivers['Name'].isin(driverList)].Points.sum()
+    driver_points = drivers.loc[drivers['Name'].isin(driverList)].Points.sum()
     turbo = drivers.loc[drivers.Name.isin(driverList) & (drivers.Cost <= 19)]
     turbo_points = turbo.Points.max()
     turbo_driver = turbo[turbo.Points == turbo_points].Name
@@ -138,7 +142,7 @@ for driverList in iterDrivers:
       best_turbo   = turbo_driver.iloc[0]
       current_group    = best_team + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
-    elif (total_points >= best_points - 2): # 200):
+    elif (total_points >= 165): #best_points - 2): # 200):
       current_group = team[name_i] + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
 end = time.time()
