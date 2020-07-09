@@ -4,7 +4,7 @@ import itertools as it
 import sys
 import time
 
-budget = 100  # current budget
+budget = 100.9  # current budget
 week=1 # current week
 starting_week = 1
 
@@ -24,9 +24,9 @@ def pprint(current_group, total_cost, total_points, turbo):
 #
 
 # import race data
-fantasy2019 = ['Week','Year','Name','Points','isDriver','StartPosition',
-               'PositionChange']
-f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019,
+fantasy2020 = ['Week','Year','Name','Points','isDriver','StartPosition',
+               'PositionFinal']
+f = pd.read_csv('data/fantasy2020.csv', names=fantasy2020,
                  dtype={'isDriver':bool})
 
 
@@ -34,18 +34,18 @@ f = pd.read_csv('data/fantasy2019.csv', names=fantasy2019,
 ending_week = max(f.Week)
 f = f[(ending_week >= f.Week) & (f.Week >= starting_week)]
 f.drop(['Year','Week'], axis=1, inplace=True)
-driver_names_subset = ['Name', 'Points', 'StartPosition','PositionChange']
+driver_names_subset = ['Name', 'Points', 'StartPosition','PositionFinal']
 driver_data      = f.loc[f.isDriver == isDriver, driver_names_subset]
 constructor_data = f.loc[f.isDriver == isConstructor, ['Name', 'Points']]
 print("Range: week " + str(starting_week) + " to week " +  str(ending_week))
 
 # fix types, need to do this here because None's aren't numbers
 driver_data.StartPosition = pd.to_numeric(driver_data.StartPosition)
-driver_data.PositionChange = pd.to_numeric(driver_data.PositionChange)
+driver_data.PositionFinal = pd.to_numeric(driver_data.PositionFinal)
 
 # import cost data
 cost_names = ["Week","Name","Cost"]
-cost_data = pd.read_csv('data/fantasy2020_cost.csv', names=cost_names)
+cost_data = pd.read_csv('data/cost2020.csv', names=cost_names)
 current_week = cost_data[cost_data.Week == week]
 cost  = current_week[["Name","Cost"]]
 
@@ -68,7 +68,7 @@ driver_div = pd.DataFrame((drivers.Points / drivers.Cost).T,columns=[ave_Label])
 teams_div  = pd.DataFrame((teams.Points  /  teams.Cost).T, columns=[ave_Label])
 drivers = drivers.join(driver_div,how="outer")
 drivers = drivers[['Name', 'Cost', 'Points', 'Points/Cost', 'StartPosition',
-                   'PositionChange']]
+                   'PositionFinal']]
 teams   = teams.join(teams_div,how="outer")
 
 # sort data
@@ -80,8 +80,8 @@ teams   = teams.sort_values('Points/Cost',ascending=False)
 print(teams)
 
 
-drivers = drivers.drop(drivers[drivers.Name == 'Hulkenberg'].index)
-drivers = drivers.drop(drivers[drivers.Name == 'Kubica'].index)
+# drivers = drivers.drop(drivers[drivers.Name == 'Hulkenberg'].index)
+# drivers = drivers.drop(drivers[drivers.Name == 'Kubica'].index)
 print(drivers)
 # sys.exit()
 
@@ -111,22 +111,18 @@ team_mercedes = list((t for t in team_list
 start = time.time()
 for driverList in iterDrivers:
   for team in team_mercedes:
-  # for team in team_list:
-    # if 'Albon' not in driverList:  # Albon is undervalued in points because he
-    #   break                        #   now drives for Red Bull
-    # Gasly is overvalued in points because he
-    # if 'Gasly' in driverList:
-    #   break
-    # print(driverList)
+
+    required = ('Hamilton', 'Russell', 'Perez')
+
+    if not set(required).issubset(driverList):
+      break
+
     team_cost   = team[cost_i]
     driver_cost   = drivers.loc[drivers['Name'].isin(driverList)].Cost.sum()
     total_cost   = team_cost + driver_cost
-
     if (total_cost > budget):
       break
 
-    # print(total_cost, ":", driverList)
-    # break
     team_points = team[points_i]
     driver_points = drivers.loc[drivers['Name'].isin(driverList)].Points.sum()
     turbo = drivers.loc[drivers.Name.isin(driverList) & (drivers.Cost <= 19)]
@@ -142,7 +138,7 @@ for driverList in iterDrivers:
       best_turbo   = turbo_driver.iloc[0]
       current_group    = best_team + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
-    elif (total_points >= 165): #best_points - 2): # 200):
+    elif (total_points >= best_points - 2): # 200):
       current_group = team[name_i] + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
 end = time.time()
