@@ -1,64 +1,64 @@
-1,2019,"Hamilton",   27,1,  5,  4
-1,2019,"Bottas",     44,1,  1,  1
-1,2019,"Verstappen", -2,1,  2, -1
-1,2019,"Leclerc",    41,1,  7,  2
-1,2019,"Vettel",      6,1, 11, 10
-1,2019,"Albon",       3,1,  4, 13
-1,2019,"Sainz",      23,1,  8,  5
-1,2019,"Ricciardo",  -9,1, 10, -1
-1,2019,"Ocon",       20,1, 14,  8
-1,2019,"Norris",     36,1,  3,  3
-1,2019,"Gasly",      24,1, 12,  7
-1,2019,"Raikkonen", -14,1, 19, -1
-1,2019,"Kvyat",       5,1, 13, 12
-1,2019,"Perez",      22,1,  6,  6
-1,2019,"Stroll",    -10,1,  9, -1
-1,2019,"Magnussen", -14,1, 16, -1
-1,2019,"Giovinazzi", 19,1, 18,  9
-1,2019,"Russell",   -12,1, 17, -1
-1,2019,"Grosjean",  -11,1, 15, -1
-1,2019,"Latifi",     15,1, 20, 11
+1,2020,"Hamilton",   27,1,  5,  4
+1,2020,"Bottas",     44,1,  1,  1
+1,2020,"Verstappen", -2,1,  2, -1
+1,2020,"Leclerc",    41,1,  7,  2
+1,2020,"Vettel",      6,1, 11, 10
+1,2020,"Albon",       3,1,  4, 13
+1,2020,"Sainz",      23,1,  8,  5
+1,2020,"Ricciardo",  -9,1, 10, -1
+1,2020,"Ocon",       20,1, 14,  8
+1,2020,"Norris",     36,1,  3,  3
+1,2020,"Gasly",      24,1, 12,  7
+1,2020,"Raikkonen", -14,1, 19, -1
+1,2020,"Kvyat",       5,1, 13, 12
+1,2020,"Perez",      22,1,  6,  6
+1,2020,"Stroll",    -10,1,  9, -1
+1,2020,"Magnussen", -14,1, 16, -1
+1,2020,"Giovinazzi", 19,1, 18,  9
+1,2020,"Russell",   -12,1, 17, -1
+1,2020,"Grosjean",  -11,1, 15, -1
+1,2020,"Latifi",     15,1, 20, 11
 
-1,2019,"Mercedes",66,0,None,None
-1,2019,"Ferrari",42,0,None,None
-1,2019,"Red Bull",11,0,None,None
-1,2019,"McLaren",49,0,None,None
-1,2019,"AlphaTauri",24,0,None,None
-1,2019,"Renault",21,0,None,None
-1,2019,"Racing Point",22,0,None,None
-1,2019,"Alfa Romeo",15,0,None,None
-1,2019,"Haas",3,0,None,None
-1,2019,"Williams",13,0,None,None
+1,2020,"Mercedes",66,0,None,None
+1,2020,"Ferrari",42,0,None,None
+1,2020,"Red Bull",11,0,None,None
+1,2020,"McLaren",49,0,None,None
+1,2020,"AlphaTauri",24,0,None,None
+1,2020,"Renault",21,0,None,None
+1,2020,"Racing Point",22,0,None,None
+1,2020,"Alfa Romeo",15,0,None,None
+1,2020,"Haas",3,0,None,None
+1,2020,"Williams",13,0,None,None
 
 
-2,2019,"Hamilton",   71,1,  1,  1
-2,2019,"Bottas",     77,1,  4,  4
-2,2019,"Verstappen", 29,1,  2, 15
-2,2019,"Leclerc",    28,1, 14, -1
-2,2019,"Vettel",     -3,1, 10, -1
-2,2019,"Albon",      27,1,  6,  4
-2,2019,"Sainz",      34,1,  3,  9
-2,2019,"Ricciardo",   4,1,  8,  8
-2,2019,"Ocon",       16,1,  5, -1
-2,2019,"Norris",     66,1,  9,  5
-2,2019,"Gasly",      23,1,  7, 15
-2,2019,"Raikkonen",   3,1, 16, 11
-2,2019,"Kvyat",      18,1, 13, 10
-2,2019,"Perez",      45,1, 17,  6
-2,2019,"Stroll",     11,1, 12,  7
-2,2019,"Magnussen",   0,1, 15, 12
-2,2019,"Giovinazzi", 31,1, 19, 14
-2,2019,"Russell",    -9,1, 11, 16
-2,2019,"Grosjean",    1,1, 20, 13
-2,2019,"Latifi",     19,1, 18, 11
+2,2020,"Hamilton",   71,1,  1,  1
+2,2020,"Bottas",     77,1,  4,  4
+2,2020,"Verstappen", 29,1,  2, 15
+2,2020,"Leclerc",    28,1, 14, -1
+2,2020,"Vettel",     -3,1, 10, -1
+2,2020,"Albon",      27,1,  6,  4
+2,2020,"Sainz",      34,1,  3,  9
+2,2020,"Ricciardo",   4,1,  8,  8
+2,2020,"Ocon",       16,1,  5, -1
+2,2020,"Norris",     66,1,  9,  5
+2,2020,"Gasly",      23,1,  7, 15
+2,2020,"Raikkonen",   3,1, 16, 11
+2,2020,"Kvyat",      18,1, 13, 10
+2,2020,"Perez",      45,1, 17,  6
+2,2020,"Stroll",     11,1, 12,  7
+2,2020,"Magnussen",   0,1, 15, 12
+2,2020,"Giovinazzi", 31,1, 19, 14
+2,2020,"Russell",    -9,1, 11, 16
+2,2020,"Grosjean",    1,1, 20, 13
+2,2020,"Latifi",     19,1, 18, 11
 
-2,2019,"Mercedes",    138,0,None,None
-2,2019,"Ferrari",      48,0,None,None
-2,2019,"Red Bull",     61,0,None,None
-2,2019,"McLaren",      80,0,None,None
-2,2019,"AlphaTauri",   31,0,None,None
-2,2019,"Renault",      40,0,None,None
-2,2019,"Racing Point", 61,0,None,None
-2,2019,"Alfa Romeo",   39,0,None,None
-2,2019,"Haas",         24,0,None,None
-2,2019,"Williams",     15,0,None,None
+2,2020,"Mercedes",    138,0,None,None
+2,2020,"Ferrari",      48,0,None,None
+2,2020,"Red Bull",     61,0,None,None
+2,2020,"McLaren",      80,0,None,None
+2,2020,"AlphaTauri",   31,0,None,None
+2,2020,"Renault",      40,0,None,None
+2,2020,"Racing Point", 61,0,None,None
+2,2020,"Alfa Romeo",   39,0,None,None
+2,2020,"Haas",         24,0,None,None
+2,2020,"Williams",     15,0,None,None
