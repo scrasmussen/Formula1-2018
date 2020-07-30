@@ -4,7 +4,7 @@ import itertools as it
 import sys
 import time
 
-budget = 104.4 #104.2 #104.0 #103.8 # current budget
+budget = 104.5 # 104.4 #104.2 #104.0 from last race
 week=2 # current week
 starting_week = 1
 
