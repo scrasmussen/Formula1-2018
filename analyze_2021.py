@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-budget = 100
-week=0 # current week
-starting_week = 0
+budget = 100.4 # 100
+week=2 # current week
+starting_week = 1
 
 # gone but not forgotten
 # 0,"Magnussen",8
@@ -37,7 +37,7 @@ f = pd.read_csv('data/2021_fantasy_points.csv', names=fantasy2021,
                  dtype={'isDriver':bool})
 
 # limit weeks
-ending_week = 0 # max(f.Week)   ----PRESEASON GUESSING----
+ending_week =  max(f.Week) #  ----PRESEASON GUESSING----
 lf = f[f.Week == ending_week]
 
 # lf.Points -= f[f.Week == starting_week].Points
@@ -101,8 +101,8 @@ cost_i=2
 
 # only look at Mercedes cause they are destroying, speeds up algorithm
 team_mercedes = list((t for t in team_list
-                      # if(t[name_i] == 'Mercedes' or t[name_i] == 'Ferrari')))
-                      if(t[name_i] == 'Mercedes')))
+                      if(t[name_i] == 'Mercedes' or t[name_i] == 'Red Bull')))
+                      # if(t[name_i] == 'Mercedes')))
 
 # print(team_list)
 # sys.exit()
