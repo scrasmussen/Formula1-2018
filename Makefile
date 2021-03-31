@@ -1,5 +1,5 @@
 PC=python3
-FILE=analyze_2020.py
+FILE=analyze_2021.py
 NEWFILE=new_analyze.py
 
 all: run
