@@ -4,9 +4,9 @@ import itertools as it
 import sys
 import time
 
-budget = 100 # 100
-week=0 # current week
-starting_week = 0
+budget = 101.6 # 100
+week=2 # current week
+starting_week = 2
 
 # gone but not forgotten
 # 0,"Magnussen",8
@@ -101,9 +101,9 @@ cost_i=2
 
 # only look at Mercedes cause they are destroying, speeds up algorithm
 team_mercedes = list((t for t in team_list
-                      if(t[name_i] == 'Red Bull')))
+                      if(t[name_i] == 'Ferrari')))
+                      # if(t[name_i] == 'Ferrari' or t[name_i] == 'Red Bull')))
                       # if(t[name_i] == 'Mercedes')))
-                      # if(t[name_i] == 'Mercedes' or t[name_i] == 'Red Bull')))
 
 # print(team_list)
 # sys.exit()
@@ -143,7 +143,7 @@ for driverList in iterDrivers:
       best_turbo   = turbo_driver.iloc[0]
       current_group    = best_team + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
-    elif (total_points >= best_points - 25): # 200):
+    elif (total_points >= best_points - 5): # 200):
     # elif (total_points >= 2600): # 200):
       current_group = team[name_i] + ", " + ", ".join(driverList)
       pprint(current_group, total_cost, total_points, best_turbo)
